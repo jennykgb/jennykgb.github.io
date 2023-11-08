@@ -1,130 +1,353 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jenny Giraldo's Portfolio</title>
+    <meta name="description" content="Portfolio" />
 
-<html>
-    <head>
-		<title>Jenny Giraldo Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="./portfolioneeds/styles2.css" />
-        <link rel="stylesheet" href="./portfolioneeds/responsive.css">
-		<noscript><link rel="stylesheet" href="./portfolioneeds/noscript.css" /></noscript>
-	</head>
+    <link rel="stylesheet" href="css/style.css" />
 
-    <body class="is-preload">
-
-        <div id="wrapper" class="fade-in">
-
-            <!-- Intro -->
-            <div id="intro">
-                <h1>My Portfolio</h1>
-            </div>
-            
-            <!-- Nav -->
-            <nav id="nav">
-                <ul class="links">
-                    <li class="active"><a href="#header">Home</a></li>
-                    <li><a href="#one">About</a></li>
-                    <li><a href="#three">Projects</a></li>
-                </ul>
-                <ul class="icons">
-                    <li><a rel="noreferrer" href="https://www.linkedin.com/in/jenny-giraldo-6a2027170" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                    <li><a rel="noreferrer" href=" https://github.com/jennykgb?tab=repositories" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                </ul>
-            </nav>
-
-            <!-- Header -->
-			<section id="header">
-				<div class="inner">
-					<h1>Hi, I'm <strong>Jenny Giraldo</strong>!</h1>
-					<p>“A good scientist is a person with original ideas. A good engineer<br />
-                        is a person who makes a design that works with as few original ideas<br />
-                        as possible. There are no prima donnas in engineering”<br />
-                        – Freeman Dyson
-					</p>
-				</div>
-			</section>
-
-            <!-- One -->
-			<section id="one" class="main style1">
-				<div class="container">
-					<div class="row gtr-150">
-						<div class="col-6 col-12-medium">
-							<header class="major">
-								<h2>Hello! My name is Jenny Giraldo,</h2>
-							</header>
-							<p>an aspiring Software Developer. Before starting my journey into becoming a Software Developer, I graduated as a Mechanical Engineer and was previously a Project Engineer handling projects of various sizes. Due to this I have had to learn how to adapt quickly and always look for solutions in ways that one might not expect. I have always had a passion to learn new things and enjoy having challanges.</p>
-						</div>
-						<div class="col-6 col-12-medium">
-							<ul class="major-icons">
-								<li><span class="icon solid style1 major brands fa-square-js"></span></li>
-								<li><span class="icon solid style2 major brands fa-html5"></span></li>
-								<li><span class="icon solid style3 major brands fa-python"></span></li>
-								<li><span class="icon solid style4 major brands fa-css3"></span></li>
-								<li><span class="icon solid style5 major brands fa-react"></span></li>
-								<li><span class="icon solid style6 major brands fa-bootstrap"></span></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-
-            <!-- Three -->
-			<section id="three" class="main style1 special">
-				<div class="container">
-					<header class="major">
-						<h2>Projects</h2>
-					</header>
-					<div class="row gtr-150">
-						<div class="col-6 col-12-medium">
-							<span class="image fit"><img src="./pics/Calc.jpg" alt="" /></span>
-							<h3>Calculator</h3>
-							<p>I built this project as I was learning to use Javascript. This project made me have a better understanding of how Javascript can be incorpotated with HTML and CSS to be able to incorporate the logic as a user interacts with the calculator.</p>
-							<ul class="actions special">
-								<li><a href="#" class="button">Live Page</a></li>
-                                <li><a rel="noreferrer" href="https://github.com/jennykgb/Calculator" class="button">Code</a></li>
-							</ul>
-						</div>
-						<div class="col-6 col-12-medium">
-							<span class="image fit"><img src="./pics/dominionLogo.jpg" alt="" /></span>
-							<h3>Dominion</h3>
-							<p>
-                                On this project I did the frontend using Javascript, HTML, and CSS. I made this project in collaberation with my husband and he wrote the backend in Python. The Frontend makes API calls and displays depending on how th user interacts with the game.</p>
-							<ul class="actions special">
-								<li><a href="#" class="button">Live Page</a></li>
-                                <li><a rel="noreferrer" href="https://github.com/Mattwj/DominionP2C" class="button">Code</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-
-            <!-- Footer -->
-			<section id="footer">
-				<ul class="icons">
-					<li><a rel="noreferrer" href="https://www.linkedin.com/in/jenny-giraldo-6a2027170" class="icon brands fa-linkedin" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					<li><a rel="noreferrer" href=" https://github.com/jennykgb?tab=repositories" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-				</ul>
-				
-			</section>
-
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/img/Jenny.jpg"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Jenny Giraldo</span>
         </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
 
-        <script src="./portfolioneeds/js/jquery.min.js"></script>
-        <script src="./portfolioneeds/js/jquery.scrollex.min.js"></script>
-        <script src="./portfolioneeds/js/jquery.scrolly.min.js"></script>
-        <script src="./portfolioneeds/js/browser.min.js"></script>
-        <script src="./portfolioneeds/js/breakpoints.min.js"></script>
-        <script src="./portfolioneeds/js/util.js"></script>
-        <script src="./portfolioneeds/js/main.js"></script>
-        <script src="https://kit.fontawesome.com/2fb4072e6d.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+            
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hello! My name is Jenny Giraldo,</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            an aspiring Software Developer. Before starting my journey into becoming a Software Developer, I graduated as a Mechanical Engineer and was previously a Project Engineer handling projects of various sizes. Due to this I have had to learn how to adapt quickly and always look for solutions in ways that one might not expect. I have always had a passion to learn new things and enjoy having challanges.
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="./#projects" class="btn btn--bg">See my projects</a>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/img/linkedin-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/img/github-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/img/twitter-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/img/yt-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="#"
+            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
+          >
+            <img
+              src="./assets/img/insta-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+    
+    
+        <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub">
+            All my projects include links to the code and live version. Click the button to learn more about each one.
+          </span>
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/img/quiz.jpg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Quiz App</h3>
+              <p class="projects__row-content-desc">
+                Quizzical is a simple quiz app that lets you select alternatives and then gives you a score. It's built with functional React components. 
+              </p>
+              <a
+                href="./project-1.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Learn more</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/img/dashboard.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Personal Dashboard</h3>
+              <p class="projects__row-content-desc">
+                A Chrome Extension that gives you an overview over the current time, how the weather is like and how Dogecoin is performing. Interacts with multiple APIs using async JS.
+              </p>
+              <a
+                href="./project-2.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Learn more</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/img/password.jpg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Password Generator</h3>
+              <p class="projects__row-content-desc">
+                An app that generates random passwords based on a few user inputs, 
+                e.g. length, types of characters, etc. Built with HTML, CSS, and vanilla JavaScript.
+              </p>
+              <a
+                href="./project-3.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Learn more</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub">
+            <p>I'm a frontend developer based out of London, UK. I love building apps that solve real-world problems, and that are delightful to use. My specialities include TypeScript, React JS, Tailwind CSS, and Styled Components.
+            </p>
+          </span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                My background is in teaching and marketing. I have a bachelors degree in English from Kings College. When I'm not coding, I take care of my five adorable cats.
+              </p>
+            </div>
+            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
+              >Contact</a
+            >
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">React</div>
+              <div class="skills__skill">TypeScript</div>
+              <div class="skills__skill">Git</div>
+              <div class="skills__skill">Figma</div>
+              <div class="skills__skill">Tailwind CSS</div>
+              <div class="skills__skill">Jasmine</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
 
     
-    </body>
+    
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            Please reach out if you have any questions! I'm happy to jump on a video call to brainstorm projects and ideas. Send me an email at jane@example.com or call me directly at +123456789
+          </span>
+        </h2>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/img/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/img/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/img/twitter-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/img/yt-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/img/insta-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Jane Smith</h4>
+            <p class="main-footer__short-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
+              tempora explicabo quae quod deserunt
+            </p>
+          </div>
+        </div>
 
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :)
+        <div class="main-footer__lower">
+          &copy; Copyright 2021. Made by
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Ram Maheshwari</a
+          >
+        </div>
+         -->
+      </div>
+    </footer>
 
-
+    <script src="./index.js"></script>
+  </body>
 </html>
